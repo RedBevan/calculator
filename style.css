@@ -48,7 +48,7 @@ h1 {
   justify-content: space-between;
 }
 
-.square-button {
+.operator {
   font-size: 28px;
   background-color: orange;
   flex-grow: 1;
@@ -57,11 +57,15 @@ h1 {
   border-radius: 5px;
 }
 
-.double-button {
+.operand {
   font-size: 28px;
   background-color: orangered;
-  flex-grow: 2.25;
+  flex-grow: 1;
   flex-basis: 0;
   margin: 3px;
   border-radius: 5px;
+}
+
+#zero {
+  flex-grow: 2.25 !important;
 }
