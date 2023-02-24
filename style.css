@@ -12,6 +12,7 @@ h1 {
   width: 400px;
   border: 12px solid rgb(20, 19, 19);
   padding: 12px;
+  margin: 50px;
   border-radius: 2%;
   background-color: rgb(32, 30, 30);
   display:flex;

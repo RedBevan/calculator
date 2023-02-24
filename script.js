@@ -1,3 +1,8 @@
+// Hook query selectors to the HTML elements
+const operator = document.querySelectorAll('.operator');
+const operand = document.querySelectorAll('.operand');
+let screen = document.querySelector('#screen');
+
 function add(a, b) {
   return a+b;
 };
@@ -33,4 +38,5 @@ function operate(a, b, operator) {
   };
 };
 
-console.log(operate(5, 3, '/'));
+screen.textContent = '988';
+
