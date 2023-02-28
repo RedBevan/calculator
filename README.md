@@ -1,1 +1,1 @@
-# calculator
+A calculator project inspired by the Odin Project.
