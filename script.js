@@ -1,6 +1,12 @@
 // Hook query selectors to the HTML elements
-const operator = document.querySelectorAll('.operator');
-const operand = document.querySelectorAll('.operand');
+const operators = document.querySelectorAll('.operator');
+
+// Make numbers appear when clicked
+const operands = document.querySelectorAll('.operand');
+for (let i = 0; i < operands.length; i++) {
+  operands[i].addEventListener('click', () => display(operands[i].id));
+};
+
 let screen = document.querySelector('#screen');
 
 function add(a, b) {
@@ -47,7 +53,7 @@ function countDecimals(number) {
   };
 };
 
-// Display number on screen
+// Display number on screen, resize font to fit
 function display(number) {
   let numberString = number.toString();
   console.log(numberString);
@@ -73,28 +79,9 @@ function display(number) {
     screen.textContent = 'error';
   }
   };
-  
-  
-//   switch (numberString.length) {
-//     case (1 || 2 || 3 || 4 || 5 || 6 || 7):
-//       screen.setAttribute('class', 'screen');
-//       console.log('normal');
-//       screen.textContent = numberString;
-//       break;
-//     case (8 || 9):
-//       screen.setAttribute('class', 'screenSmallText');
-//       console.log('small');
-//       screen.textContent = numberString;
-//       break;
-//     default:
-//       screen.textContent = 'error';
-//   };
-// };
 
-display('655555555555555555555555');
+display('0');
 
-// 0-7 digits: 84px
-// 8-9 digits: 68px
-// 10 -13 digits: 48px;
-// 14 - 23 digits: 28px;
+
+
 
