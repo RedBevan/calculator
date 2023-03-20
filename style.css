@@ -41,11 +41,10 @@ h1 {
   width: 100%;
   display: flex;
   flex-grow: 0.5;
-  border: 3px solid yellow;
   justify-content: flex-end;
   align-items: center;
-  font-size: 26px;
-  padding: 5px 0 0 0;
+  font-size: 28px;
+  padding: 10px 0 0 0;
 }
 
 .screen {
@@ -111,6 +110,33 @@ h1 {
 }
 
 .operator {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.ac {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.plus-minus {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.equals {
   font-size: 28px;
   background-color: orange;
   flex-grow: 1;
