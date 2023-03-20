@@ -1,13 +1,17 @@
 // Hook query selectors to the HTML elements
 const operators = document.querySelectorAll('.operator');
 
-// Make numbers appear when clicked
+// Make numbers appear on screen when clicked
 const operands = document.querySelectorAll('.operand');
 for (let i = 0; i < operands.length; i++) {
   operands[i].addEventListener('click', () => display(operands[i].id));
+  operandValue = operands[i].id;
 };
 
 let screen = document.querySelector('#screen');
+let topOfScreen = document.querySelector('#topOfScreen');
+
+topOfScreen.textContent = '986+48';
 
 function add(a, b) {
   return a+b;
