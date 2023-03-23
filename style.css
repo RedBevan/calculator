@@ -20,84 +20,42 @@ h1 {
   align-content: center;
 }
 
-#screen-container {
-  display: flex;
-  justify-content: center;
-  width: 380px;
-  border: 3px solid green;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  border: 3px solid black;
-  margin: 5px;
-  padding: 0 10px 0 0;
+.screen-container {
   background-color: lightgrey;
-  justify-content: center;
-  a
+  border: 3px solid yellow;
 }
 
 .topOfScreen {
-  height: 30px;
-  width: 100%;
+  border: 3px solid green;
   display: flex;
-  flex-grow: 0.5;
+
+}
+
+.operandDiv {
+  border: 3px solid blue;
+  height: 50px;
+  flex: 1;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 28px;
-  padding: 10px 0 0 0;
+}
+
+#leftOperandDiv {
+  flex: 1;
+}
+
+#rightOperandDiv {
+  flex: 0;
 }
 
 .screen {
-  font-size: 84px;
-  background-color: lightgrey;
+  border: 3px solid blue;
   height: 100px;
-  width: 100%;
-  flex-grow: 1; 
   display: flex;
   justify-content: flex-end;
-  align-items: center; 
-}
-
-.screenSmallText {
-  font-size: 68px;
-  background-color: lightgrey;
-  height: 100px;
-  flex-grow: 1; 
-  border-radius: 5px;
-  border: 3px solid black;
-  margin: 5px;
-  padding: 0 10px 0 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
-}
-
-.screenSmallerText {
-  font-size: 48px;
-  background-color: lightgrey;
-  height: 100px;
-  flex-grow: 1; 
-  border-radius: 5px;
-  border: 3px solid black;
-  margin: 5px;
-  padding: 0 10px 0 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
-}
-
-.screenSmallestText {
-  font-size: 28px;
-  background-color: lightgrey;
-  height: 100px;
-  flex-grow: 1; 
-  border-radius: 5px;
-  border: 3px solid black;
-  margin: 5px;
-  padding: 0 10px 0 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
+  align-items: center;
+  font-size: 64px;
 }
 
 .button-row {
@@ -154,8 +112,82 @@ h1 {
   border-radius: 5px;
 }
 
-/* This selector does not work */
-#0 {
-  flex-grow: 2 !important;
-  background-color: green !important;
+/* #screen-container {
+  display: flex;
+  justify-content: center;
+  width: 380px;
+  border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 0 10px 0 0;
+  background-color: lightgrey;
+  justify-content: center;
+} */
+
+/* .topOfScreen {
+  border: 3px solid yellow;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0.5;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 28px;
+  padding: 10px 0 0 0;
+} */
+
+/* .leftOperand {
+  border: 3px solid red;
 }
+
+.rightOperand {
+  border: 3px solid blue
+}
+
+
+.screenSmallText {
+  font-size: 68px;
+  background-color: lightgrey;
+  height: 100px;
+  flex-grow: 1; 
+  border-radius: 5px;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 0 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+.screenSmallerText {
+  font-size: 48px;
+  background-color: lightgrey;
+  height: 100px;
+  flex-grow: 1; 
+  border-radius: 5px;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 0 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+
+.screenSmallestText {
+  font-size: 28px;
+  background-color: lightgrey;
+  height: 100px;
+  flex-grow: 1; 
+  border-radius: 5px;
+  border: 3px solid black;
+  margin: 5px;
+  padding: 0 10px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+} */

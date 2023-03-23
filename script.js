@@ -54,13 +54,20 @@ function operate(a, b, operator) {
 // Display number at top of screen on click
 function display(number) {
   let numberString = number.toString();
-  topOfScreen.textContent = topOfScreen.textContent + numberString;
+  let operandOne;
+  operandOne = number;
+  console.log(operandOne);
+  topOfScreen.textContent = topOfScreen.textContent + number;
+  operandOne = number +
   };
 
 // Add operators to the on-screen display and calculator functionality
 function displayOperation(operator) {
   topOfScreen.textContent = topOfScreen.textContent + operator;
 };
+
+// Function to make clicking the operator capture the inputted data
+
 
 
 
@@ -102,7 +109,7 @@ function displayOperation(operator) {
 //   };
 
 
-display('');
+
 
 
 
