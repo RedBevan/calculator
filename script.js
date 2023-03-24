@@ -120,14 +120,17 @@ function equals() {
   let rightOperand = rightOperandDiv.textContent;
   let operator = operatorDiv.textContent;
   screen.textContent = operate(leftOperand, rightOperand, operator);
-}
+};
 
 // This operation runs when an operator is pressed after a previous operation (ie to use previous answer in a new operation)
-function newOperation(operator) {
-  leftOperandDiv.textContent = screen.textContent;
-  screen.textContent = '';
+function newOperation(newOperator) {
+  let operator = operatorDiv.textContent;
+  let leftOperand = leftOperandDiv.textContent;
+  let rightOperand = rightOperandDiv.textContent;
+  leftOperandDiv.textContent = operate(leftOperand, rightOperand, operator);
+  operatorDiv.textContent = newOperator;
   rightOperandDiv.textContent = '';
-  operatorDiv.textContent = operator;
+  screen.textContent = '';
 };
 
 
