@@ -78,7 +78,7 @@ h1 {
 
 .flipped-button-row {
   height: 100px;
-  background-color: rgb(32, 30, 30);
+  background-color: papayawhip;
   display: flex;
   flex-grow: 1;
   justify-content: space-between;

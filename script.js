@@ -36,7 +36,7 @@ for (let i=0; i < operators.length; i++) {
 // Make flipped operators switch last answer to new left operand
 const flippedOperators = document.querySelectorAll('.flipped-operator');
 for (let i = 0; i < flippedOperators.length; i++) {
-  flippedOperators[i].addEventListener('click', () => newOperation);
+  flippedOperators[i].addEventListener('click', () => newOperation(flippedOperators[i].textContent));
 };
 
 // Connect JS to HTML divs
@@ -123,8 +123,11 @@ function equals() {
 }
 
 // This operation runs when an operator is pressed after a previous operation (ie to use previous answer in a new operation)
-function newOperation() {
+function newOperation(operator) {
   leftOperandDiv.textContent = screen.textContent;
+  screen.textContent = '';
+  rightOperandDiv.textContent = '';
+  operatorDiv.textContent = operator;
 };
 
 
