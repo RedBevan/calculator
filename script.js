@@ -30,7 +30,13 @@ for (let i = 0; i < flippedOperands.length; i++) {
 // Make operators appear on screen when clicked
 const operators = document.querySelectorAll('.operator');
 for (let i=0; i < operators.length; i++) {
-  operators[i].addEventListener('click', () => displayOperation(operators[i].id));
+  operators[i].addEventListener('click', () => displayOperation(operators[i].textContent));
+};
+
+// Make flipped operators switch last answer to new left operand
+const flippedOperators = document.querySelectorAll('.flipped-operator');
+for (let i = 0; i < flippedOperators.length; i++) {
+  flippedOperators[i].addEventListener('click', () => newOperation);
 };
 
 // Connect JS to HTML divs
@@ -42,19 +48,21 @@ let rightOperandDiv = document.querySelector('#rightOperandDiv');
 screen.textContent = '';
 
 function add(a, b) {
-  return a+b;
+  return Number(a) + Number(b);
 };
 
 function subtract(a, b) {
-  return a-b;
+  console.log(Number(a));
+  console.log(Number(b));
+  return Number(a) - Number(b);
 };
 
 function multiply(a,b ) {
-  return a*b;
+  return Number(a) * Number(b);
 };
 
 function divide(a, b) {
-  return a/b;
+  return Number(a) / Number(b);
 };
 
 function operate(a, b, operator) {
@@ -82,11 +90,14 @@ function reset() {
   rightOperandDiv.textContent = '';
   operatorDiv.textContent = '';
   screen.textContent = '';
+  // Reset button classes
+  document.getElementById('default-button-rows').classList.remove('hidden');
+ document.getElementById('flipped-button-rows').classList.add('hidden');
 };
 
 // Display number in left screen div on click
 function displayLeft(number) {
-  let numberString = number.toString();
+  console.log(number);
   leftOperandDiv.textContent = leftOperandDiv.textContent + number;
   };
 
@@ -111,6 +122,10 @@ function equals() {
   screen.textContent = operate(leftOperand, rightOperand, operator);
 }
 
+// This operation runs when an operator is pressed after a previous operation (ie to use previous answer in a new operation)
+function newOperation() {
+  leftOperandDiv.textContent = screen.textContent;
+};
 
 
 
