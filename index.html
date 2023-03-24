@@ -27,6 +27,9 @@
 
   </div>
 
+  <!-- These rows show by default and when = is pressed -->
+  <div id='default-button-rows' class=''>
+  
   <div id='row1' class='button-row'>
 
     <button type='button' id='ac' class='ac'>AC</button>
@@ -51,44 +54,104 @@
 
   </div>
 
-  <div id='row3' class='button-row'>
+    <div id='row3' class='button-row'>
 
-    <button type='button' id='4' class='operand'>4</button>
+      <button type='button' id='4' class='operand'>4</button>
 
-    <button type='button' id='5' class='operand'>5</button>
+      <button type='button' id='5' class='operand'>5</button>
 
-    <button type='button' id='6' class='operand'>6</button>
+      <button type='button' id='6' class='operand'>6</button>
 
-    <button type='button' id='–' class='operator'>–</button>
+      <button type='button' id='–' class='operator'>–</button>
 
-  </div>
+    </div>
 
-  <div id='row4' class='button-row'>
+    <div id='row4' class='button-row'>
 
-    <button type='button' id='1' class='operand'>1</button>
+      <button type='button' id='1' class='operand'>1</button>
 
-    <button type='button' id='2' class='operand'>2</button>
+      <button type='button' id='2' class='operand'>2</button>
 
-    <button type='button' id='3' class='operand'>3</button>
+      <button type='button' id='3' class='operand'>3</button>
 
-    <button type='button' id='+' class='operator'>+</button>
+      <button type='button' id='+' class='operator'>+</button>
 
-  </div>
+    </div>
 
-  <div id='row5' class='button-row'>
+    <div id='row5' class='button-row'>
 
       <button type='button' id='0' class='operand'>0</button>
 
       <button type='button' id='.' class='operand'>.</button>
 
-      <button type='button' id='=' class='equals'>=</button>
+      <button type='button' id='equals' class='equals'>=</button>
+
+    </div>
 
   </div>
 
+  <!-- These rows show when operator is pressed -->
+  <div id='flipped-button-rows' class='hidden'>
   
+  <div id='flipped-row1' class='flipped-button-row'>
 
+    <button type='button' id='flipped-ac' class='flipped-ac'>AC</button>
 
+    <button type='button'  id='flipped-plus-minus' class='flipped-plus-minus'>+/-</button>
 
+    <button type='button'  id='flipped-%' class='flipped-operator'>%</button>
+
+    <button type='button'  id='flipped-÷' class='flipped-operator'>÷</button>
+
+  </div>
+
+  <div id='flipped-row2' class='flipped-button-row'>
+
+    <button type='button' id='flipped-7' class='flipped-operand'>7</button>
+
+    <button type='button' id='flipped-8' class='flipped-operand'>8</button>
+
+    <button type='button'v id='flipped-9' class='flipped-operand'>9</button>
+
+    <button type='button' id='flipped-x' class='flipped-operator'>x</button>
+
+  </div>
+
+  <div id='flipped-row3' class='flipped-button-row'>
+
+    <button type='button' id='flipped-4' class='flipped-operand'>4</button>
+
+    <button type='button' id='flipped-5' class='flipped-operand'>5</button>
+
+    <button type='button' id='flipped-6' class='flipped-operand'>6</button>
+
+    <button type='button' id='flipped-–' class='flipped-operator'>-</button>
+
+  </div>
+
+  <div id='flipped-row4' class='flipped-button-row'>
+
+    <button type='button' id='flipped-1' class='flipped-operand'>1</button>
+
+    <button type='button' id='flipped-2' class='flipped-operand'>2</button>
+
+    <button type='button' id='flipped-3' class='flipped-operand'>3</button>
+
+    <button type='button' id='flipped-+' class='flipped-operator'>+</button>
+
+  </div>
+
+  <div id='flipped-row5' class='flipped-button-row'>
+
+      <button type='button' id='flipped-0' class='flipped-operand'>0</button>
+
+      <button type='button' id='flipped-.' class='flipped-operand'>.</button>
+
+      <button type='button' id='flipped-equals' class='flipped-equals'>=</button>
+
+  </div>
+
+  </div>
 
 </div>
 

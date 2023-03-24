@@ -8,7 +8,7 @@ h1 {
 }
 
 #calculator-body {
-  height: 600px;
+  height: 660px;
   width: 400px;
   border: 12px solid rgb(20, 19, 19);
   padding: 12px;
@@ -68,11 +68,32 @@ h1 {
   background-color: rgb(32, 30, 30);
   display: flex;
   flex-grow: 1;
-  /* border: 2px solid yellow; */
+  justify-content: space-between;
+}
+
+/* Hidden class for flipped button row divs */
+.hidden {
+  display: none;
+}
+
+.flipped-button-row {
+  height: 100px;
+  background-color: rgb(32, 30, 30);
+  display: flex;
+  flex-grow: 1;
   justify-content: space-between;
 }
 
 .operator {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.flipped-operator {
   font-size: 28px;
   background-color: orange;
   flex-grow: 1;
@@ -90,7 +111,25 @@ h1 {
   border-radius: 5px;
 }
 
+.flipped-ac {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
 .plus-minus {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.flipped-plus-minus {
   font-size: 28px;
   background-color: orange;
   flex-grow: 1;
@@ -108,7 +147,25 @@ h1 {
   border-radius: 5px;
 }
 
+.flipped-equals {
+  font-size: 28px;
+  background-color: orange;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
 .operand {
+  font-size: 28px;
+  background-color: orangered;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.flipped-operand {
   font-size: 28px;
   background-color: orangered;
   flex-grow: 1;
